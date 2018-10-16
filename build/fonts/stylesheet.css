@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Charter';
+    src: url('Charter-Italic.eot');
+    src: url('Charter-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Charter-Italic.woff2') format('woff2'),
+        url('Charter-Italic.woff') format('woff'),
+        url('Charter-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: url('Charter-BoldItalic.eot');
+    src: url('Charter-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Charter-BoldItalic.woff2') format('woff2'),
+        url('Charter-BoldItalic.woff') format('woff'),
+        url('Charter-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: url('Charter-BlackItalic.eot');
+    src: url('Charter-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Charter-BlackItalic.woff2') format('woff2'),
+        url('Charter-BlackItalic.woff') format('woff'),
+        url('Charter-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: url('Charter-Roman.eot');
+    src: url('Charter-Roman.eot?#iefix') format('embedded-opentype'),
+        url('Charter-Roman.woff2') format('woff2'),
+        url('Charter-Roman.woff') format('woff'),
+        url('Charter-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: url('Charter-Black.eot');
+    src: url('Charter-Black.eot?#iefix') format('embedded-opentype'),
+        url('Charter-Black.woff2') format('woff2'),
+        url('Charter-Black.woff') format('woff'),
+        url('Charter-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: url('Charter-Bold.eot');
+    src: url('Charter-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Charter-Bold.woff2') format('woff2'),
+        url('Charter-Bold.woff') format('woff'),
+        url('Charter-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

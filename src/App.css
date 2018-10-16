@@ -1,0 +1,442 @@
+/*HTML5 Reset*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+/* End HTML5 Reset */
+
+body, html {
+    background: #1B4C76;
+    color: white;
+    height: 100vh;
+    font-family: 'Charter Roman';
+    position: relative;
+
+
+}
+
+h1 {
+    font-size: 56px;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 100;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 100;
+}
+h4 {
+    font-size: 22px;
+    font-weight: 100;
+}
+h5 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 16px;
+}
+
+/* Layout Styles */
+header {
+    background: #1B4C76;
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    z-index: 1;
+    display: inline-flex;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+main {
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main p {
+    font-size: 20px;
+}
+main p:nth-child(2) {
+    margin-top: 15px;
+}
+main p:nth-child(3) {
+    margin-bottom: 25px;
+}
+
+footer {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+
+.logo {
+    width: 200px;
+    padding: 15px 0;
+}
+
+.container {
+    max-width: 1175px;
+/*     border: solid 1px #000; */
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.footer-copyright {
+    padding: 5px 10px;
+}
+/* End Layout Styles */
+
+/* Fonts */
+@font-face {
+    font-family: 'Charter Italic';
+    src: url('../public/fonts/Charter-Italic.eot');
+    src: url('../public/fonts/Charter-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../public/fonts/Charter-Italic.woff2') format('woff2'),
+        url('../public/fonts/Charter-Italic.woff') format('woff'),
+        url('../public/fonts/Charter-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Charter Bold Italic';
+    src: url('../public/fonts/Charter-BoldItalic.eot');
+    src: url('../public/fonts/Charter-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../public/fonts/Charter-BoldItalic.woff2') format('woff2'),
+        url('../public/fonts/Charter-BoldItalic.woff') format('woff'),
+        url('../public/fonts/Charter-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Charter Black Italic';
+    src: url('../public/fonts/Charter-BlackItalic.eot');
+    src: url('../public/fonts/Charter-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../public/fonts/Charter-BlackItalic.woff2') format('woff2'),
+        url('../public/fonts/Charter-BlackItalic.woff') format('woff'),
+        url('../public/fonts/Charter-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Charter Roman';
+    src: url('../public/fonts/Charter-Roman.eot');
+    src: url('../public/fonts/Charter-Roman.eot?#iefix') format('embedded-opentype'),
+        url('../public/fonts/Charter-Roman.woff2') format('woff2'),
+        url('../public/fonts/Charter-Roman.woff') format('woff'),
+        url('../public/fonts/Charter-Roman.ttf') format('truetype');
+    font-weight: 100;
+    font-style: 100;
+}
+
+@font-face {
+    font-family: 'Charter Black';
+    src: url('../public/fonts/Charter-Black.eot');
+    src: url('../public/fonts/Charter-Black.eot?#iefix') format('embedded-opentype'),
+        url('../public/fonts/Charter-Black.woff2') format('woff2'),
+        url('../public/fonts/Charter-Black.woff') format('woff'),
+        url('../public/fonts/Charter-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Charter Bold';
+    src: url('../public/fonts/Charter-Bold.eot');
+    src: url('../public/fonts/Charter-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../public/fonts/Charter-Bold.woff2') format('woff2'),
+        url('../public/fonts/Charter-Bold.woff') format('woff'),
+        url('../public/fonts/Charter-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Apple Chancery';
+    src: url('../public/fonts/Apple-Chancery.eot');
+    src: url('../public/fonts/Apple-Chancery.eot?#iefix') format('embedded-opentype'),
+        url('../public/fonts/Apple-Chancery.woff2') format('woff2'),
+        url('../public/fonts/Apple-Chancery.woff') format('woff'),
+        url('../public/fonts/Apple-Chancery.ttf') format('truetype'),
+        url('../public/fonts/Apple-Chancery.svg#Apple-Chancery') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* End */
+
+
+/* Homepage Styles */
+.greeting {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.greeting-bracket {
+    font-family: 'Oswald', sans-serif;
+    color: #083153;
+    padding: 0 10px;
+}
+
+.intro,
+.subtext  {
+    text-align: center;
+}
+
+.intro{
+    margin: 45px 0;
+}
+
+.subtext{
+    margin: 85px 0;
+}
+
+.charterBlack {
+    font-family: 'Charter Black';
+}
+
+.charterblackItalic {
+    font-family: 'Charter Black Italic';
+}
+.charterItalic {
+    font-family: 'Charter Italic'
+}
+.charterItalic.about-link {
+    color: #9FCBFF;
+
+}
+.ampersand {
+    font-family: 'Apple Chancery';
+}
+.fa-heart{
+    font-size: 18px;
+}
+
+.download-link {
+    color: #9FCBFF;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.footer-copyright-txt {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.footer-copyright-txt .fa-heart{
+    font-size: 12px;
+}
+
+.cls-1, .cls-2 {
+fill: #fff;
+}
+
+.cls-2 {
+font-size: 15px;
+font-family: AdventPro-Regular, Advent Pro;
+font-weight: 100;
+}
+
+::selection {
+    background:#000;
+}
+
+
+@media(min-width: 992px) {
+    .about {
+        display: grid;
+        grid-template-columns: 58% 42%;
+    }
+}
+
+@media(max-width: 535px) {
+    h2 {
+    font-size: 20px;
+    }
+    .footer-copyright-txt {
+        font-size: 11px;
+        text-align: center;
+    }
+}
+
+
+.about-left p {
+    font-size: 25px;
+    line-height: 34px;
+}
+
+.download-link-container {
+    margin: 35px 0;
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0 55px;
+}
+
+.skills-title {
+    color: #8099B7;
+    margin: 62px 0 25px 0px;
+    padding: 0px 0;
+}
+
+.skills,
+.skills-title {
+    font-size: 22px;
+    font-family: 'Charter Italic'
+}
+
+.skills {
+    color: #9FCBFF;
+    line-height: 33px;
+}
+
+.contact-list {
+    list-style: none;
+    margin: 25px 0 0px -75px;
+}
+.contact-list li {
+    padding: 15px 0;
+    font-size: 22px;
+}
+.contact-list li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.contact-icon {
+    width: 24px;
+    padding: 0 15px;
+}
+
+/*Hamburger Menu*/
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+    background-color: #07365F!important;
+}
+
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+    width: 37px!important;
+    height: 3px!important;
+    border-radius: 0px!important;
+}
+
+.hamburger {
+    padding: 13px!important;
+}
+
+.hamburger-box {
+    width: 37px!important;
+    height: 19px!important;
+}
+
+.overlay {
+  border-radius: 100%;
+  /* background: #245A89; */
+  background: transparent;
+  display: flex;
+  align-items: center;
+  transition: .25s ease;
+}
+
+
+.overlay:hover {
+
+  background: #245A89;
+
+}
